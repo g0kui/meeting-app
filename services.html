@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Stackly Meeting</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo-container">
+                <img src="images/logo.webp" class="logo-img">
+                <a href="index.html" class="logo">Stackly Meeting</a>
+            </div>
+            <button class="hamburger" aria-label="Toggle navigation menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            <ul class="nav-menu">
+                <li class="nav-item dropdown">
+                    <div class="nav-link dropdown-toggle">
+                        Home ▾
+                    </div>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="home2.html">Home2</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="dashboard.html" class="nav-link">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a href="signup.html" class="nav-link">Sign Up</a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html" class="btn-primary">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" style="background: linear-gradient(135deg, rgba(0,120,212,0.9), rgba(16,110,190,0.9)), url('https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=1200&h=600&fit=crop&crop=center'); background-size: cover; background-position: center;">
+            <div class="hero-content">
+                <h1>Our Services</h1>
+                <p>Comprehensive Solutions for Every Meeting Need</p>
+                <div class="hero-buttons">
+                    <a href="404.html" class="btn-large">Start Meeting</a>
+                    <a href="404.html" class="btn-secondary">Schedule Meeting</a>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 1rem; font-size: 2.5rem; color: var(--primary-color);">What We Offer</h2>
+            <p style="text-align: center; color: #666; margin-bottom: 3rem; font-size: 1.1rem;">Professional meeting solutions tailored to your business needs</p>
+
+            <!-- Services Grid -->
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Video Conferencing</h3>
+                    <p>Host unlimited HD video meetings with up to 1000 participants. Features include screen sharing, virtual backgrounds, and breakout rooms.</p>
+                    <ul style="margin-top: 1rem; color: #666;">
+                        <li>✓ HD & 4K video quality</li>
+                        <li>✓ Up to 1000 participants</li>
+                        <li>✓ Screen sharing & annotations</li>
+                        <li>✓ Virtual backgrounds</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Webinars & Events</h3>
+                    <p>Create engaging webinars and virtual events with interactive features, polls, Q&A, and registration management.</p>
+                    <ul style="margin-top: 1rem; color: #666;">
+                        <li>✓ Up to 10,000 attendees</li>
+                        <li>✓ Custom registration pages</li>
+                        <li>✓ Live polls & Q&A</li>
+                        <li>✓ Post-event analytics</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Team Messaging</h3>
+                    <p>Stay connected with integrated chat, direct messaging, and channel-based communication for your entire organization.</p>
+                    <ul style="margin-top: 1rem; color: #666;">
+                        <li>✓ Real-time messaging</li>
+                        <li>✓ File sharing</li>
+                        <li>✓ Team channels</li>
+                        <li>✓ Message history & search</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Calendar Integration</h3>
+                    <p>Seamlessly integrate with Google Calendar, Outlook, and other popular calendar apps for easy scheduling.</p>
+                    <ul style="margin-top: 1rem; color: #666;">
+                        <li>✓ Two-way calendar sync</li>
+                        <li>✓ Automated reminders</li>
+                        <li>✓ Meeting scheduling assistant</li>
+                        <li>✓ Time zone detection</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Meeting Recording</h3>
+                    <p>Record meetings to the cloud with automatic transcription, searchable content, and easy sharing capabilities.</p>
+                    <ul style="margin-top: 1rem; color: #666;">
+                        <li>✓ Cloud recording</li>
+                        <li>✓ Auto-transcription</li>
+                        <li>✓ Searchable recordings</li>
+                        <li>✓ Easy sharing & playback</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Enterprise Security</h3>
+                    <p>Enterprise-grade security with end-to-end encryption, SSO, compliance certifications, and admin controls.</p>
+                    <ul style="margin-top: 1rem; color: #666;">
+                        <li>✓ End-to-end encryption</li>
+                        <li>✓ SSO & SAML support</li>
+                        <li>✓ Compliance (GDPR, HIPAA)</li>
+                        <li>✓ Advanced admin controls</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Virtual Classroom</h3>
+                    <p>Purpose-built features for online education including whiteboard, hand raising, attendance tracking, and breakout groups.</p>
+                    <ul style="margin-top: 1rem; color: #666;">
+                        <li>✓ Interactive whiteboard</li>
+                        <li>✓ Attendance tracking</li>
+                        <li>✓ Breakout rooms</li>
+                        <li>✓ Student engagement tools</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>API & Integrations</h3>
+                    <p>Powerful APIs and pre-built integrations with popular business tools like Slack, Microsoft Teams, and Salesforce.</p>
+                    <ul style="margin-top: 1rem; color: #666;">
+                        <li>✓ RESTful API</li>
+                        <li>✓ Webhooks</li>
+                        <li>✓ 100+ integrations</li>
+                        <li>✓ Custom app development</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Mobile Applications</h3>
+                    <p>Full-featured mobile apps for iOS and Android allowing you to join and host meetings from anywhere.</p>
+                    <ul style="margin-top: 1rem; color: #666;">
+                        <li>✓ iOS & Android apps</li>
+                        <li>✓ Full meeting features</li>
+                        <li>✓ Offline access</li>
+                        <li>✓ Background mode</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Enterprise Section -->
+            <div style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); color: #fff; padding: 4rem 2rem; border-radius: 10px; margin: 4rem 0; text-align: center;">
+                <h2 style="font-size: 2.5rem; margin-bottom: 1rem; color: #fff;">Enterprise Solutions</h2>
+                <p style="font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.9;">Custom packages for large organizations with dedicated support and advanced features</p>
+                <ul style="list-style: none; margin: 2rem 0; font-size: 1.1rem;">
+                    <li style="margin-bottom: 0.5rem;">✓ Dedicated account manager</li>
+                    <li style="margin-bottom: 0.5rem;">✓ Custom deployment options</li>
+                    <li style="margin-bottom: 0.5rem;">✓ 24/7 priority support</li>
+                    <li style="margin-bottom: 0.5rem;">✓ SLA guarantees</li>
+                    <li style="margin-bottom: 0.5rem;">✓ Training & onboarding</li>
+                </ul>
+                <a href="404.html" class="btn-large">Contact Sales</a>
+            </div>
+
+            <!-- Support Section -->
+            <div class="about-section">
+                <h2 style="text-align: center;">24/7 Customer Support</h2>
+                <p style="text-align: center; color: #666; margin-bottom: 3rem;">We're here to help you succeed</p>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>Live Chat</h3>
+                        <p>Get instant help from our support team via live chat, available 24/7.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>Email Support</h3>
+                        <p>Send us your questions and we'll respond within 2 hours during business hours.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>Knowledge Base</h3>
+                        <p>Access comprehensive guides, tutorials, and FAQs in our help center.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>Video Tutorials</h3>
+                        <p>Learn at your own pace with our library of video training materials.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div style="text-align: center; padding: 4rem 2rem;">
+                <h2 style="font-size: 2.5rem; margin-bottom: 1rem; color: var(--primary-color);">Ready to Get Started?</h2>
+                <p style="font-size: 1.2rem; color: #666; margin-bottom: 2rem;">Choose the perfect plan for your team</p>
+                <a href="signup.html" class="btn-large">Start Free Trial</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Stackly Meeting</h3>
+                <p>Professional online meeting platform for teams of all sizes.</p>
+                <div class="social-links">
+                    <a href="404.html">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                    <a href="404.html">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                        </svg>
+                    </a>
+                    <a href="404.html">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                    <a href="404.html">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.749.097.118.112.221.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.747-1.378 0 0-.599 2.282-.744 2.84-.282 1.084-1.064 2.456-1.549 3.235C9.584 23.815 10.77 24.001 12.017 24.001c6.624 0 11.99-5.367 11.99-12.014C24.007 5.367 18.641.001 12.017.001z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="404.html">Pricing</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="404.html">Help Center</a></li>
+                    <li><a href="404.html">Blog</a></li>
+                    <li><a href="404.html">API Documentation</a></li>
+                    <li><a href="404.html">Community</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <ul>
+                    <li><a href="404.html">Support</a></li>
+                    <li><a href="404.html">Contact Us</a></li>
+                    <li><a href="404.html">Partners</a></li>
+                    <li><a href="404.html">Careers</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Stackly Meeting. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
