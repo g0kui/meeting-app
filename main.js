@@ -18,11 +18,45 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         // Close menu when clicking on a nav link
-        const navLinks = navMenu.querySelectorAll('.nav-link, .btn-primary');
+        const navLinks = navMenu.querySelectorAll('.nav-link:not(.dropdown-toggle), .btn-primary');
         navLinks.forEach(link => {
             link.addEventListener('click', function() {
                 hamburger.classList.remove('active');
                 navMenu.classList.remove('active');
+            });
+        });
+    }
+
+    // Dropdown toggle for small screens
+    const dropdownToggle = document.querySelector('.dropdown-toggle');
+    const dropdownMenu = document.querySelector('.dropdown-menu');
+
+    if (dropdownToggle && dropdownMenu) {
+        dropdownToggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation(); // Prevent event bubbling
+            dropdownMenu.classList.toggle('active');
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!dropdownToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                dropdownMenu.classList.remove('active');
+            }
+        });
+
+        // Close dropdown when clicking on dropdown links
+        const dropdownLinks = dropdownMenu.querySelectorAll('a');
+        dropdownLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                dropdownMenu.classList.remove('active');
+                // Close hamburger menu too if it's open
+                const hamburger = document.querySelector('.hamburger');
+                const navMenu = document.querySelector('.nav-menu');
+                if (hamburger && navMenu) {
+                    hamburger.classList.remove('active');
+                    navMenu.classList.remove('active');
+                }
             });
         });
     }

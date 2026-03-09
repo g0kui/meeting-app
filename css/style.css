@@ -148,12 +148,30 @@ nav {
     transition: all 0.3s;
     margin-top: 0.5rem;
 }
+    .dropdown-menu.active {
+        opacity: 1;
+        visibility: visible;
+        max-height: 200px;
+    }
 
 .dropdown:hover .dropdown-menu {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
+    display: block;
+    overflow: visible;
 }
+
+.dropdown-menu.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+    .dropdown-menu.active {
+        opacity: 1;
+        visibility: visible;
+        max-height: 200px;
+    }
 
 .dropdown-menu li {
     list-style: none;
@@ -1073,12 +1091,33 @@ footer {
     border-radius: 0;
     margin: 0;
     padding: 0;
+    opacity: 0;
+    visibility: hidden;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  .dropdown-menu.active {
     opacity: 1;
     visibility: visible;
-    transform: none;
+    max-height: 200px;
+  }
+  .dropdown:hover .dropdown-menu {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
   }
   .dropdown-menu a {
+    display: block;
+    padding: 1rem;
+    color: var(--text-color);
+    text-decoration: none;
     border-bottom: 1px solid #eee;
+    text-align: center;
+    width: 100%;
+  }
+  .dropdown-menu a:hover {
+    background: var(--light-color);
   }
   .dropdown-menu a:last-child {
     border-bottom: none;
